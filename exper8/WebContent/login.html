@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Form</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+input[type=text], select, textarea,input[type=password] {
+ width: 90%;
+ padding: 15px;
+ border: 3px solid #ccc;
+ border-radius: 80px;
+ resize: vertical;
+}
+input[type=radio],input[type=checkbox]{
+ padding: 14px;
+ height: 15px;
+ width: 15px;
+}
+label {
+ padding: 12px 12px 12px 0;
+ display: inline-block;
+ color: violet;
+}
+input[type=submit],input[type=button],input[type=reset] {
+ background-color: #4CAF50;
+ margin: 20px;
+ color: white;
+ padding: 12px 20px;
+ border: none;
+ border-radius: 100px;
+ cursor: pointer;
+ float: left;
+}
+input[type=submit]:hover,input[type=button]:hover,input[type=reset]:hover {
+ background-color: pink;
+}
+</style>
+</head>
+<body>
+<center><font size=8><u> Login Form </u></font></center>
+<form action="./LoginCheck.jsp" method="post">
+<table width=100% border=0>
+<tr>
+ <th>Name:</th>
+ <td>
+ <input type="text" name="nametxt">
+ </td>
+</tr>
+<tr>
+<th>Password:</th>
+ <td>
+ <input type="password" name="passtxt">
+ </td>
+</tr>
+<tr>
+ <th>
+ <input type="submit" value="Submit">
+ </th>
+ <td>
+ 
+ <input type="reset" value="Reset">
+ </td>
+</tr>
+</table>
+</form>
+</body>
+</html>
